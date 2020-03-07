@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/smokeColor"
+        android:alpha="0.48"
+        />
+
+        <ImageView
+            android:id="@+id/img_product"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="4dp"
+            />
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deskripsi"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/nunitobold"
+            android:textSize="16sp"
+            android:layout_below="@id/img_product"
+            />
+
+        <TextView
+            android:id="@+id/name_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="judul"
+            android:textColor="@color/pinkPrimary"
+            android:layout_below="@id/desc"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/nunitobold"
+            />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Keterangan"
+            android:textColor="@color/blackPrimary"
+            android:layout_marginStart="16dp"
+            android:layout_below="@id/name_product"
+            android:fontFamily="@font/nunitolight"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            />
+
+    <TextView
+        android:id="@+id/txtmateri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Materi"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/pinkPrimary"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/nunitobold"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/description"
+        />
+
+    <TextView
+        android:id="@+id/materi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Materi"
+        android:textSize="16sp"
+        android:textColor="@color/blackPrimary"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/nunitolight"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/txtmateri"
+        />
+
+    <Button
+        android:id="@+id/btnDaftar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_btn_pink"
+        android:layout_below="@id/materi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="Daftar Sekarang"
+        android:textColor="@color/whitePrimary"
+        />
+
+    <ImageView
+        android:id="@+id/tentang"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_account_circle_24px"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="8dp"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:alpha="0.2"
+        android:src="@drawable/ic_undraw_drone_surveillance_kjjg"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

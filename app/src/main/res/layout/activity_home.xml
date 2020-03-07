@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bluePrimary"
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:id="@+id/tentang"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_account_circle_24px"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="8dp"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rv_product"
+        tools:listitem="@layout/item_main_page"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="48dp"
+        />
+
+</RelativeLayout>

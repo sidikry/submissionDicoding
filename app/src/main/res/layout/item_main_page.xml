@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bluePrimary"
+    android:padding="8dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/img_product"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        tools:src="@android:color/holo_blue_dark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/img_product"
+        android:layout_toRightOf="@id/img_product"
+        android:padding="4dp"
+        android:layout_margin="4dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunitobold"
+            android:textColor="@color/pinkPrimary"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="Nama Product" />
+
+        <TextView
+            android:id="@+id/details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/whitePrimary"
+            tools:text="Langganan 30 Hari Dicoding Academy Gapai Mimpimu Menjadi Programmer Professional"
+            android:fontFamily="@font/nunitolight"
+            />
+
+        <LinearLayout
+            android:id="@+id/keterangan"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Oleh: Dicoding Indonesia"
+                android:fontFamily="@font/nunitobold"
+                android:textColor="@color/whitePrimary"
+                android:textSize="11sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Yuk Pelajari Kelas Ini"
+                android:layout_marginLeft="4dp"
+                android:background="@drawable/background_text"
+                android:textSize="10sp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/greyPrimary"
+        android:layout_below="@id/level"
+        />
+
+    <TextView
+        android:id="@+id/level"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/img_product"
+        android:fontFamily="@font/nunitolight"
+        android:textSize="14sp"
+        android:textColor="@color/whitePrimary"
+        android:gravity="center_vertical"
+        android:background="@color/pinkPrimary"
+        android:alpha="0.48"
+        android:text="Level: Pemula"
+        android:layout_marginTop="32dp"
+        />
+
+</RelativeLayout>
+
